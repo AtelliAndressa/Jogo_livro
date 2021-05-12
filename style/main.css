@@ -1,0 +1,174 @@
+:root{
+    --logo:#cfe509;
+    --preta:#141414;
+}
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+/*elementos base*/
+body{
+   background: var(--preta);
+   font-family: 'Arial', Times, serif;
+   color:white;
+}
+
+
+header .container{
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header .logo{
+    margin-left: 5px;
+    color: var(--logo);
+    font-family: 'Arial Black', Times;
+    font-size:40px;
+}
+
+.principal{
+    font-size:16px;
+    background: linear-gradient(rgba(0,0,0,.50),rgba(0,0,0,.50)100%),  url('/Alpha/JavaScriptAvançado/tentativa_mudar_jogo2/desafiolivrojogoAndressa/img/adivinhas.png');
+    height: 350px;
+    background-size:cover;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding-top: 30px;
+}
+
+.principal .descricao{
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+
+.principal .titulo{
+    font-size: 40px;
+    font-family: 'Trebuchet MS', Arial, sans-serif;
+}
+
+.botao{
+    background-color: rgba(0,0,0,.50);
+    border:none;
+    color: white;
+    padding:15px 30px;
+    margin: 15px;
+    font-size: 15px;
+    cursor: pointer;
+    transition: .3s ease all;
+    margin-bottom: 30px;
+}
+
+.botao:hover{
+    background-color:white;
+    color:black;
+}
+
+.container{
+    margin-left: 40px;
+}
+
+/*#amostraTexto{
+    padding-top: 5px;
+}*/
+
+.box-livro{
+    height: 350px;
+    width: 100%;
+    display: block;
+    cursor: pointer;
+}
+
+.carrosel-livro{
+    margin-top:5px;
+}
+
+.principal1{
+    font-size:16px;
+    background: linear-gradient(rgba(0,0,0,.50),rgba(0,0,0,.50)100%);
+    background-size:cover;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding-top: 50px;
+    padding-left: 40px;
+}
+
+
+#numJogadores {
+    padding: 14px; 
+}
+
+#aposta1, #aposta2{
+    padding: 14px;
+    width: 75px;
+}
+
+/*#apostaJogador-1, #apostaJogador-2{
+    padding: 8px;
+    width: 80px;
+    margin-top: 5px;
+}*/
+
+#respostaPagina{
+    background-color: rgba(0, 0, 0, 0.5);
+    border:none;
+    color: white;
+    padding:5px 20px;
+    margin-right: 15px;
+    font-size: 15px;
+    font-weight: bolder;
+    cursor: pointer;
+    transition: .3s ease all;
+    margin-bottom: 20px;
+}
+
+#respostaLetraSorteada{
+    background-color: rgba(0, 0, 0, 0.5);
+    border:none;
+    color: white;
+    width: 60px;
+    padding: 15px 15px;
+    margin-right: 15px;
+    font-size: 15px;
+    font-weight: bolder;
+    cursor: pointer;
+    transition: .3s ease all;
+    margin-bottom: 20px;
+}
+
+#respostaVencedor{
+    color: rgb(248, 244, 6);
+    width: 400px;
+    padding: 30px 30px;
+    font-size: 20px;
+    font-weight: bolder;
+}
+
+#resposta{
+    font-size: 20px;
+    color: rgb(29, 211, 235);
+  
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
