@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/main.css">
+
+    <!--responsividade-->
+    <link rel="stylesheet" href="style/responsive.css">
+
+    <!--owl css-->
+    <link rel="stylesheet" href="style/owl/owl.carousel.min.css">
+    <link rel="stylesheet" href="style/owl/owl.theme.default.min.css">
+
+    <title>JOGO DO LIVRO</title>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h2 class="logo">ADVINHE</h2>
+        </div>
+    </header>
+
+    <main>
+        <div class="principal">
+            <div class="container">
+                <h3 class="titulo">JOGO DE ADIVINHAÇÃO</h3> <br>
+                <h4>Regras:</h4>
+                <p class="descricao">Escolha os Jogadores, escolha o livro e adivinhe quantas vezes a letra sorteada pelo jogo aparecerá no texto da página selecionada</p>
+                <div class="botoes">
+
+                    <div id="numeroJogadores">
+                        <h4>Quantidade de Jogadores:</h4><br/>
+                        <select name="jogadores" id="numJogadores">
+                            <option value="0" id="jogador1"></option>
+                            <option value="1" id="jogador1">1 Jogador</option>
+                            <option value="2" id="jogador2">2 Jogadores</option>
+                        </select>
+                        <input type="button" class="botao" value="Jogar" onclick="jogarAgora()">
+                    </div>  
+
+                </div>            
+            </div>
+        </div>
+    </main>
+
+    <div class="carrosel-livro">
+        <div class="owl-carousel owl-theme">
+                <div class="item">
+                    <img id="1" class="box-livro" src="img/abrigo.jpg" onclick="funcaoLivro(0)">
+                </div>
+                <div class="item">
+                    <img id="2" class="box-livro" src="img/andar_a_pe.jpg" onclick="funcaoLivro(1)">
+                </div>
+    
+                <div class="item">
+                    <img id="3" class="box-livro" src="img/capa.jpg" onclick="funcaoLivro(2)">
+                </div>
+                <div class="item">
+                    <img id="4" class="box-livro" src="img/aborboletaazul.jpg" onclick="funcaoLivro(3)">
+                </div>
+                <div class="item">
+                    <img id="5" class="box-livro" src="img/mares.jpg" onclick="funcaoLivro(4)">
+                </div>
+                            
+        </div>
+    </div>
+
+    <div> <!--principal-->
+        <div class="principal1"><!--principal 1-->
+                <div id="paginaSorteada1"><!--numero da pagina sorteada-->
+                </div>
+
+                <div id="paginaSorteada">
+                    <div id="respostaPagina"> </div>
+                    <div id="respostaLetraSorteada"> </div> 
+                </div>
+
+                <div id="apostaJogador1"> </div>
+                <div id="apostaJogador2"> </div>
+                <input type="button" class="botao" value="Enviar" id="button2" onclick="palpite()"></p>
+                
+            <div id="mostraTexto">
+                <div id="ver-pagina"> </div>
+            </div>
+            
+            <div id="vezezRealLetra"></div>
+
+            <div id="resposta">
+                
+                <div id="respostaVencedor"></div>
+            </div>
+
+        </div><!--fim principal 1-->
+    </div><!--fim principal-->
+    <div id="corsite">
+        <a href="#" id="vermelho"><img src="img/proximo.png" id="vermelho" width="5%;" height="5%"></a>
+    </div>
+
+
+
+    <script src="https://kit.fontawesome.com/2c36e9b7b1.js"></script>
+    <script src="js/owl/jquery.min.js"></script>
+    <script src="js/owl/owl.carousel.min.js"></script>
+    <script src="js/owl/setup.js"></script>
+ <script src="js/owl/script.js"></script>
+
+ 
+</body>
+</html>
